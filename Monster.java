@@ -1,4 +1,4 @@
-public class Monster extends Character {
+public class Monster {
 	int fury = 0;
 	
 	Monster() {

@@ -15,8 +15,9 @@ public class Spell {
 			this.name = "Ice";
 		}	
 	}
-	
 	public String toString() {
-		return this.name;
+		String result = "";
+		result += " Spell: " + this.name;
+		return result;
 	}
 }
