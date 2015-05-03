@@ -3,16 +3,19 @@ import java.util.Scanner;
 public class BattleRevised
 {
 	public static void main( String[] args ) {
+
 		Scanner keyboard = new Scanner(System.in);
 		Player p = new Player();
+		
+		
 		int k = 20;
 		int w = 0;
 		
 		// creating you
-		System.out.println();
-		System.out.println( "*What spell would you like to learn for your travels?* :" );
-		System.out.println( "1) Heal\n2) Fireball\n3) Ice" );
-		p.spell.number = keyboard.nextInt();
+			// System.out.println();
+	// 		System.out.println( "*What spell would you like to learn for your travels?* :" );
+	// 		System.out.println( "1) Heal\n2) Fireball\n3) Ice" );
+	// 		p.spell.number = keyboard.nextInt();
 		
 		System.out.println();
 		System.out.println( "<---- You ---->" );
@@ -36,7 +39,7 @@ public class BattleRevised
 		delay(2000);
 		
 		// creating the requested adventurers
-		Character adventurers[] = new Character[k];
+		Adventurer adventurers[] = new Adventurer[k];
 		for ( int i = 0; i < k; i++ ) {
 			int j = i + 1;
 			int l = (int)((Math.random()*8)+1);

@@ -10,16 +10,11 @@ public class Monster extends Character {
 		this.speed = (int)((Math.random()*2)+1);
 		this.armor = (int)((Math.random()*2)+0);
 	}
+
 	public String toString() {
 		String result = "";
 		result += "<<<<< Monster >>>>>\n";
-		result += "\n";
-		result += "| STATS |\n";
-		result += "---------\n";
-		result += "Health: " + this.health + "\n";
-		result += "Attack: " + this.attack + "\n";
-		result += " Speed: " + this.speed + "\n";
-		result += " Armor: " + this.armor + "\n";
+		result += super.toString();
 		return result;
 	}
 }

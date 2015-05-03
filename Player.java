@@ -1,25 +1,18 @@
-public class Player  {
-	int health = 35;
-	int attack = 6;
-	int speed = 4;
-	int armor = 3;
-	int mp = 5;
-	Spell spell = new Spell();
-	
+public class Player extends Adventurer {
+
 	Player() {
-		
-	}
+		className = "Player";
+		spell = "Mend";
 	
-	public String toString() {
-		String result = "";
-		result += "| STATS |\n";
-		result += "---------\n";
-		result += "Health: " + this.health + "\n";
-		result += "Attack: " + this.attack + "\n";
-		result += " Speed: " + this.speed + "\n";
-		result += " Armor: " + this.armor + "\n";
-		result += "    MP: " + this.mp + "\n";
-		result += " Spell: " + this.spell.name();
-		return result;
+		healthCap = 20;
+		attackCap = 5;
+		armorCap = 3;
+		speedCap = 5;
+		intelligenceCap = 7;
+		willCap = 6;
+		mpCap = 8;
+		staminaCap = 12;
+		
+		maximizeStats();
 	}
 }	
