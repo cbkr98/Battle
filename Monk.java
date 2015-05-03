@@ -1,4 +1,4 @@
-public class Trickster extends Character{
+public class Monk extends Character{
 	int healthCurrent = 0, healthCap = 0;
 	int attackCurrent = 0, attackCap = 0;
 	int armorCurrent = 0, armorCap = 0;
@@ -8,15 +8,15 @@ public class Trickster extends Character{
 	int mpCurrent = 0, mpCap = 0;
 	int staminaCurrent = 0, staminaCap = 0;
 	
-	Trickster() {
-		this.healthCap = (int)((Math.random()*3)+4);
-		this.attackCap = (int)((Math.random()*2)+0);
-		this.armorCap = (int)((Math.random()*2)+0);
-		this.speedCap = (int)((Math.random()*2)+1);
-		this.intelligenceCap = (int)((Math.random()*3)+2);
-		this.willCap = (int)((Math.random()*3)+1);
-		this.mpCap = (int)((Math.random()*3)+3);
-		this.staminaCap = (int)((Math.random()*4)+4);
+	Monk() {
+		this.healthCap = (int)((Math.random()*3)+9);
+		this.attackCap = (int)((Math.random()*2)+2);
+		this.armorCap = (int)((Math.random()*1)+0);
+		this.speedCap = (int)((Math.random()*2)+2);
+		this.intelligenceCap = (int)((Math.random()*2)+0);
+		this.willCap = (int)((Math.random()*3)+3);
+		this.mpCap = (int)((Math.random()*4)+2);
+		this.staminaCap = (int)((Math.random()*4)+12);
 		
 		this.healthCurrent = healthCap;
 		this.attackCurrent = attackCap;
@@ -29,7 +29,7 @@ public class Trickster extends Character{
 	}	
 	public String toString() {
 		String result = "";
-		result += "------Trickster------\n";
+		result += "------Monk------\n";
 		result += "\n";
 		result += "| STATS |\n";
 		result += "---------\n";
@@ -42,7 +42,7 @@ public class Trickster extends Character{
 		result += "     MP: " + this.mpCurrent + "/" + this.mpCap + "\n";
 		result += "Stamina: " + this.staminaCurrent + "/" + this.staminaCap + "\n";
 		result += "\n";
-		result += " Spell: Fear";
+		result += " Spell: Haste";
 		return result;
 	}
 }
